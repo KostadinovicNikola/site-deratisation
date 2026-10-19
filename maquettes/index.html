@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Choix de la maquette</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; background: #f4f4f5; color: #18181b; }
+  main { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
+  h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+  p { color: #52525b; margin: 0 0 32px; }
+  .grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  a.carte { display: block; background: #fff; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid #e4e4e7; transition: transform .2s, box-shadow .2s; }
+  a.carte:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.08); }
+  .apercu { height: 160px; display: flex; align-items: flex-end; padding: 20px; gap: 8px; }
+  .pastille { width: 34px; height: 34px; border-radius: 50%; border: 3px solid #fff; }
+  .texte { padding: 20px; }
+  .texte h2 { margin: 0 0 6px; font-size: 1.2rem; }
+  .texte p { margin: 0; font-size: .95rem; }
+  .a .apercu { background: linear-gradient(135deg, #0a3622, #0f5132); }
+  .b .apercu { background: linear-gradient(180deg, #eef3ff, #fff); border-bottom: 1px solid #e4e4e7; }
+  .c .apercu { background: repeating-linear-gradient(-45deg, #0b0b0c 0 20px, #1a1a10 20px 40px); border-bottom: 5px solid #facc15; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Quel style préférez-vous ?</h1>
+  <p>Trois propositions pour la page d'accueil, avec le même contenu. Cliquez pour voir chaque maquette en entier, sur ordinateur ou sur téléphone.</p>
+  <div class="grille">
+    <a class="carte a" href="modele-a.html">
+      <div class="apercu"><span class="pastille" style="background:#0f5132"></span><span class="pastille" style="background:#f59e0b"></span></div>
+      <div class="texte"><h2>A · Nature et confiance</h2><p>Vert profond et orange. Évoque l'écologie et le sérieux.</p></div>
+    </a>
+    <a class="carte b" href="modele-b.html">
+      <div class="apercu"><span class="pastille" style="background:#1d4ed8"></span><span class="pastille" style="background:#e63946"></span></div>
+      <div class="texte"><h2>B · Clair et rassurant</h2><p>Fond blanc, bleu marine et rouge. Sobre, style entreprise de services.</p></div>
+    </a>
+    <a class="carte c" href="modele-c.html">
+      <div class="apercu"><span class="pastille" style="background:#0b0b0c"></span><span class="pastille" style="background:#facc15"></span></div>
+      <div class="texte"><h2>C · Sombre et percutant</h2><p>Noir et jaune, façon signalétique. Moderne et marquant, axé urgence.</p></div>
+    </a>
+  </div>
+</main>
+</body>
+</html>

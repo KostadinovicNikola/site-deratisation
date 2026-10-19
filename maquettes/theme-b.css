@@ -1,0 +1,22 @@
+/* Modèle B : clair et rassurant (bleu marine + rouge) */
+:root {
+  --vert: #1d4ed8; --vert-fonce: #0f2a5c; --vert-clair: #e8efff;
+  --accent: #e63946; --accent-fonce: #c62f3b; --fond-gris: #f4f7fc;
+}
+body { font-family: "Inter", system-ui, sans-serif; }
+.btn--accent { color: #fff; box-shadow: 0 6px 18px rgba(230,57,70,.3); }
+.hero { background: linear-gradient(180deg, #eef3ff, #fff); color: var(--texte); }
+.hero h1 { color: var(--vert-fonce); }
+.hero p { color: var(--texte-doux); opacity: 1; }
+.hero .surtitre { background: var(--vert-clair) !important; color: var(--vert) !important; }
+.hero .btn--contour { color: var(--vert-fonce); }
+.hero__atouts svg { color: var(--vert); }
+.hero__carte { background: #fff; border-color: var(--bordure); box-shadow: 0 20px 50px rgba(15,42,92,.12); }
+.hero__carte h3 { color: var(--vert-fonce); }
+.hero__carte li { border-color: var(--bordure); }
+.hero__carte li::before { color: #fff; }
+.hero__carte span { color: var(--texte-doux); }
+.carte { border-radius: 8px; border-top: 4px solid var(--vert); }
+.carte__icone { border-radius: 50%; }
+.btn { border-radius: 8px; }
+.pied .logo__icone { color: #fff; }
