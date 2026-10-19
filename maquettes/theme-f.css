@@ -1,0 +1,23 @@
+/* Modèle F : technique et industriel (gris ardoise, orange vif, angles droits) */
+:root {
+  --vert: #ea580c; --vert-fonce: #1e293b; --vert-clair: #fff1e8;
+  --accent: #ea580c; --accent-fonce: #c2410c; --fond-gris: #f1f5f9; --bordure: #dbe2ea; --rayon: 0px;
+}
+body { font-family: "Barlow", system-ui, sans-serif; }
+h1, h2 { font-family: "Barlow Condensed", "Barlow", sans-serif; text-transform: uppercase; font-weight: 700; letter-spacing: .01em; }
+h1 { font-size: clamp(2.4rem, 6vw, 4rem); }
+.btn, .surtitre, .carte, .zone li, .faq details, .formulaire, .appel, .hero__carte, .carte__icone, .logo__icone { border-radius: 0 !important; }
+.btn--accent { color: #fff; box-shadow: none; }
+.hero { background: linear-gradient(90deg, #1e293b 0 60%, #334155 60%); }
+.hero__carte { background: #0f172a; border: 0; border-left: 6px solid var(--accent); }
+.hero__carte li::before { border-radius: 0; color: #fff; }
+.hero__atouts svg { color: var(--accent); }
+.surtitre { background: var(--vert-fonce); color: #fff; }
+.carte { border-left: 4px solid var(--accent); }
+.carte__icone { background: var(--vert-fonce); color: #fff; }
+.appel { background: var(--accent); }
+.appel .btn--accent { background: var(--vert-fonce); }
+.pied .logo__icone { color: #fff; }
+.logo__icone { background: var(--accent); }
+.etape__num { border-radius: 0; }
+@media (max-width: 860px) { .hero { background: #1e293b; } }

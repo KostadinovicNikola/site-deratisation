@@ -1,0 +1,27 @@
+/* Modèle D : élégant et haut de gamme (crème, brun, terracotta, titres serif) */
+:root {
+  --vert: #9a3412; --vert-fonce: #2b1d14; --vert-clair: #f6ebe1;
+  --accent: #c2410c; --accent-fonce: #9a3412; --fond: #fcfaf6; --fond-gris: #f4efe7; --bordure: #e7dccd;
+  --texte: #2b1d14; --texte-doux: #6b5a4c;
+}
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
+.entete { background: rgba(252,250,246,.95); }
+.btn--accent { color: #fff; box-shadow: none; }
+.btn { border-radius: 4px; }
+.hero { background: var(--fond-gris); color: var(--texte); border-bottom: 1px solid var(--bordure); }
+.hero h1 { color: var(--vert-fonce); font-size: clamp(2.2rem, 5.5vw, 3.6rem); }
+.hero p { color: var(--texte-doux); opacity: 1; }
+.hero .surtitre { background: transparent !important; color: var(--accent) !important; padding: 0; border-bottom: 2px solid var(--accent); border-radius: 0; }
+.hero .btn--contour { color: var(--vert-fonce); }
+.hero__atouts svg { color: var(--accent); }
+.hero__carte { background: var(--vert-fonce); border: 0; border-radius: 4px; }
+.hero__carte li::before { color: #fff; }
+.carte { border-radius: 4px; background: #fff; }
+.carte__icone { background: transparent; border: 1px solid var(--bordure); border-radius: 50%; }
+.surtitre { background: transparent; padding: 0; border-radius: 0; color: var(--accent); }
+.appel { border-radius: 4px; background: var(--vert-fonce); }
+.pied { background: var(--vert-fonce); }
+.pied .logo__icone { color: #fff; }
+.zone li, .faq details { border-radius: 4px; }
+.hero__carte, .hero__carte h3, .hero__carte strong { color: #fff; }
+.hero__carte span { color: rgba(255,255,255,.75); }
